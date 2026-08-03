@@ -1,0 +1,26 @@
+random_state: 42
+
+dataset:
+  folder: "synthetic_data"
+
+split:
+  test_size: 0.15
+  validation_size: 0.15
+
+random_forest:
+  n_estimators: 100
+  max_depth: 10
+  min_samples_split: 2
+
+xgboost:
+  learning_rate: 0.1
+  n_estimators: 100
+  max_depth: 6
+
+neural_network:
+  hidden_layer_sizes: [128, 64]
+  activation: relu
+  max_iter: 200
+
+output:
+  model_dir: "model_artifacts"
